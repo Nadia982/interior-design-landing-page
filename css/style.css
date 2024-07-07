@@ -1,5 +1,129 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: var(--cl--2--);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --cl--1--: #ffffff;
+  --cl--2--: #292f36;
+  --cl--3--: #4d5053;
+  --cl--4--: #f4f0ec;
+  --cl--5--: #cda274;
+  --gap--: clamp(1rem, 5vw, 5rem);
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+}
 
 a {
-    text-decoration: none;
-} */
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: ‘DM Serif Display’, serif;
+  text-transform: capitalize;
+  line-height: 125%;
+}
+
+.row {
+  display: flex;
+}
+
+.flex {
+  flex-wrap: wrap;
+  gap: var(--gap--);
+}
+
+.flex > * {
+  flex: 1 1 30rem;
+}
+
+.column {
+  display: grid;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap--);
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*Navigation*/
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap--);
+  padding: 1.5rem 0;
+}
+
+.logo img {
+  object-fit: contain;
+  max-height: 35px;
+}
+
+.toggleMenu {
+  display: none;
+}
+
+nav {
+  align-items: center;
+  gap: var(--gap--);
+}
+
+nav a {
+  font-size: 1.25rem;
+  fill: transparent;
+  stroke: var(--cl--2--);
+}
+
+nav a:hover {
+  color: var(--cl--5--);
+  stroke: var(--cl--5--);
+}
+
+nav a svg {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+nav a:hover svg {
+  transform: rotate(45deg);
+  -webkit-transform: 0.5s ease-in-out;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* End navigation*/
