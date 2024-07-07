@@ -17,7 +17,7 @@ body {
   --cl--3--: #4d5053;
   --cl--4--: #f4f0ec;
   --cl--5--: #cda274;
-  --gap--: clamp(1rem, 5vw, 5rem);
+  --gap--: clamp(1rem, 4vw, 4rem);
 }
 
 img {
@@ -83,6 +83,14 @@ header {
   justify-content: space-between;
   gap: var(--gap--);
   padding: 1.5rem 0;
+}
+
+.icon {
+    display: flex;
+    gap: 12px;
+    line-height: 1.1;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
