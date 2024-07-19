@@ -136,3 +136,72 @@ nav a:hover svg {
 }
 
 /* End navigation*/
+
+/* Media */
+@media (min-width: 1220px){
+.container {
+  max-width: 1160px;
+}  
+}
+
+@media (max-width: 1000px){
+  .toggleMenu{
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    z-index: 1000;
+    transition: background-size .5s ease-in-out;
+  -webkit-transition: background-size .5s ease-in-out;
+  -moz-transition: background-size .5s ease-in-out;
+  -ms-transition: background-size .5s ease-in-out;
+  -o-transition: background-size .5s ease-in-out;
+  }
+
+  .toggleMenu active {
+    position: fixed;
+    right: 5%;
+    background-image: url(../img/close.svg);
+    background-size: 25px;
+ }
+
+ nav {
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 0;
+  opacity: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+ }
+nav.active {
+  position: fixed;
+  min-height: 100%;
+  opacity: 1;
+  background: var(--cl--1--);
+  z-index: 999;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+
+}
+
