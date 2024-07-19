@@ -18,6 +18,7 @@ body {
   --cl--4--: #f4f0ec;
   --cl--5--: #cda274;
   --gap--: clamp(1rem, 4vw, 4rem);
+  font-size: 1.25rem;
 }
 
 img {
@@ -164,7 +165,7 @@ nav a:hover svg {
   -o-transition: background-size .5s ease-in-out;
   }
 
-  .toggleMenu active {
+  .toggleMenu.active {
     position: fixed;
     right: 5%;
     background-image: url(../img/close.svg);
@@ -190,7 +191,9 @@ nav a:hover svg {
   -ms-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
  }
+
 nav.active {
+  
   position: fixed;
   min-height: 100%;
   opacity: 1;
