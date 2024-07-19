@@ -89,6 +89,7 @@ header {
     display: flex;
     gap: 12px;
     line-height: 1.1;
+    font-style: italic;
     align-items: center;
     justify-content: center;
 }
