@@ -193,17 +193,16 @@ nav a:hover svg {
  }
 
 nav.active {
-  
   position: fixed;
   min-height: 100%;
   opacity: 1;
   background: var(--cl--1--);
   z-index: 999;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 }
