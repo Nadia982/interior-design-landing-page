@@ -151,7 +151,7 @@ nav a:hover svg {
 }
 
 .hero .container {
-  height: clamp(50vh, 100vw, 90vh);
+  height: clamp(50vh, 100vw, 80vh);
   align-items: center;
 }
 
@@ -170,7 +170,7 @@ h1 {
   font-size: clamp(2rem, 7.5vw, 3rem);
   font-weight: 700;
   color: var(--cl--2--);
-  
+  font-style: italic;
 }
 
 .hero-content a {
