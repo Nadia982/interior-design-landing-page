@@ -138,7 +138,55 @@ nav a:hover svg {
 
 /* End navigation*/
 
+/* Hero */
+.hero {
+  /* background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886877.jpg); */
+  background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886880.jpg);
+  /* background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886913.jpg); */
+  /* Photo by Rana Matloob Hussain https://www.pexels.com/@rana-matloob-hussain-733235258/*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+}
+
+.hero .container {
+  height: clamp(50vh, 100vw, 90vh);
+  align-items: center;
+}
+
+.hero-content {
+  
+    background-color: var(--cl--1--);
+  height: fit-content;
+  opacity: 0.8;
+  padding: 1rem 0.8rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  
+}
+
+h1 {
+  font-size: clamp(2rem, 7.5vw, 3rem);
+  font-weight: 700;
+  color: var(--cl--2--);
+  
+}
+
+.hero-content a {
+font-size: clamp(0.8rem, 5vw, 1.375rem);
+line-height: 125%;
+color: var(--cl--2--);
+font-size: 2rem;
+margin: 1.5rem auto;
+font-weight: 700;
+}
+
+.hero-content img {
+  width: 30px;
+}
+
+/* End hero */
 
 /* Media */
 @media (min-width: 1220px){
