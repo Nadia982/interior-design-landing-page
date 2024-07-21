@@ -153,17 +153,20 @@ nav a:hover svg {
 .hero .container {
   height: clamp(50vh, 100vw, 80vh);
   align-items: center;
+  margin: 0;
 }
 
 .hero-content {
-  
     background-color: var(--cl--1--);
-  height: fit-content;
-  opacity: 0.8;
-  padding: 1rem 0.8rem;
-  margin: 0.5rem;
-  border-radius: 12px;
+  /* height: fit-content; */
   
+width: 80%;
+  opacity: 0.8;
+  height: 100%;
+  padding: 0 5%;
+  align-content: center;
+ display: block;
+  clip-path: polygon(0 0, 100% 0%, 54% 100%, 0% 100%);
 }
 
 h1 {
@@ -180,10 +183,12 @@ color: var(--cl--2--);
 font-size: 2rem;
 margin: 1.5rem auto;
 font-weight: 700;
+padding: 
 }
 
 .hero-content img {
   width: 30px;
+  display: block;
 }
 
 /* End hero */
