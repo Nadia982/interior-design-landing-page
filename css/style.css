@@ -241,11 +241,11 @@ nav a:hover svg {
   color: var(--cl--2--);
   stroke: var(--cl--2--);
   background: transparent;
-  border-radius: 10px 0 10px 0;
-  -webkit-border-radius: 10px 0 10px 0;
-  -moz-border-radius: 10px 0 10px 0;
-  -ms-border-radius: 10px 0 10px 0;
-  -o-border-radius: 10px 0 10px 0;
+  border-radius: 0 10px 0 10px;
+  -webkit-border-radius: 0 10px 0 10px;
+  -moz-border-radius: 0 10px 0 10px;
+  -ms-border-radius: 0 10px 0 10px;
+  -o-border-radius: 0 10px 0 10px;
 }
 
 /* End hero */
