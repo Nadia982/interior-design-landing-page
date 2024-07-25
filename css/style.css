@@ -201,7 +201,6 @@ nav a:hover svg {
 
 /* Page button */
 .page-btn {
-  margin-top: 12px;
   cursor: pointer;
   font-weight: 600;
   font-size: 1.125rem;
@@ -237,7 +236,7 @@ nav a:hover svg {
   bottom: 0;
 } */
 
-.page-btn:hover{
+.page-btn:hover {
   color: var(--cl--2--);
   stroke: var(--cl--2--);
   background: transparent;
@@ -249,6 +248,44 @@ nav a:hover svg {
 }
 
 /* End hero */
+
+/* Cards */
+
+.card-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: var(--gap--);
+}
+
+.cards {
+  padding: 4rem 0;
+}
+
+.cards div {
+  text-align: center;
+  border: 1px solid var(--cl--4--);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+h4 {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: clamp(1rem, 5vw, 1.6rem);
+}
+
+.cards div p {
+  margin: 1.5rem;
+}
+
+.cards .page-btn {
+  margin: 1.5rem auto;
+}
+
+/* End cards */
 
 /* Media */
 @media (min-width: 1220px) {
