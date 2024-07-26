@@ -15,7 +15,7 @@ body {
   --cl--1--: #ffffff;
   --cl--2--: #292f36;
   --cl--3--: #4d5053;
-  --cl--4--: #f4f0ec;
+  --cl--4--: #e3dad1;
   --cl--5--: #cda274;
   --gap--: clamp(1rem, 4vw, 4rem);
   font-size: 1.25rem;
@@ -255,10 +255,7 @@ nav a:hover svg {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 gap: var(--gap--);
-}
-
-.cards {
-  padding: 4rem 0;
+margin-top: 4rem;
 }
 
 .cards div {
