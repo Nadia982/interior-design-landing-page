@@ -1,4 +1,4 @@
-//Navigation
+// Navigation
 function toggleMenu() {
     const toggleMenu = document.querySelector(".toggleMenu");
     const navigation = document.querySelector(".navigation");
@@ -6,5 +6,4 @@ function toggleMenu() {
     navigation.classList.toggle("active");
 }
 
-
-//End navigation
+// End navigation
