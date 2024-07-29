@@ -92,6 +92,7 @@ header {
   font-style: italic;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .logo img {
@@ -105,13 +106,14 @@ header {
 
 nav {
   align-items: center;
-  gap: var(--gap--);
+  /* gap: var(--gap--); */
 }
 
 nav a {
   font-size: 1.25rem;
   fill: transparent;
   stroke: var(--cl--2--);
+  padding: 1rem;
 }
 
 nav a:hover {
