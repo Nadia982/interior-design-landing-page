@@ -56,6 +56,7 @@ h6 {
 .flex {
   flex-wrap: wrap;
   gap: var(--gap--);
+  align-items: center;
 }
 
 .flex > * {
@@ -197,8 +198,11 @@ nav a:hover svg {
 .hero-content .page-btn {
   margin-top: 2rem;
   font-size: 1.5rem;
-  padding: 0.6rem 1.2rem;
   opacity: 1;
+}
+
+.hero-content p, .cards div p, .contact-content h2+p{
+  margin: 1.5rem auto;
 }
 
 /* Page button */
@@ -214,7 +218,7 @@ nav a:hover svg {
   background: var(--cl--2--);
   max-width: max-content;
   border: 1px solid var(--cl--2--);
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 10px 0 10px 0;
   -webkit-border-radius: 10px 0 10px 0;
   -moz-border-radius: 10px 0 10px 0;
@@ -286,6 +290,72 @@ h4 {
 
 /* End cards */
 
+/* Contact */
+
+.contact {
+  flex-wrap: wrap-reverse;
+  padding: 4rem 0;
+}
+
+.contact-content {
+  align-self: center;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.details {
+  max-width: max-content;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.details .row {
+  margin-top: 1.5rem;
+  fill: transparent;
+  stroke: var(--cl--5--);
+  background: var(--cl--4--);
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: background-size 0.5s ease-in-out;
+  -webkit-transition: background-size 0.5s ease-in-out;
+  -moz-transition: background-size 0.5s ease-in-out;
+  -ms-transition: background-size 0.5s ease-in-out;
+  -o-transition: background-size 0.5s ease-in-out;
+}
+
+.contact-svg:hover {
+  background: var(--cl--5--);
+  stroke: var(--cl--4--);
+
+}
+
+.details p{
+  text-transform: capitalize;
+  margin-top: .25rem;
+}
+
+.contact-content .page-btn {
+  margin-top: 1.5rem;
+}
+
+.contact-img img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* End contact */
+
 /* Media */
 @media (min-width: 1220px) {
   .container {
@@ -317,7 +387,7 @@ h4 {
     position: fixed;
     right: 5%;
     background-image: url(../img/close.svg);
-    background-size: 25px;
+    background-size: 50%;
   }
 
   nav {
