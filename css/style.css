@@ -272,10 +272,12 @@ nav a:hover svg {
 /* Cards */
 
 .card-container {
+  max-width: clamp(1160px, 90%, 1160px);
+  margin: 0 auto;
   display: grid;
   grid-auto-rows: 1fr;
   padding: 0;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: var(--gap--);
   grid-column-gap: var(--gap--);
   justify-content: space-between;
@@ -291,8 +293,6 @@ nav a:hover svg {
   border: 1px solid var(--cl--4--);
   border-radius: 25px;
   line-height: 125%;
-  height: max-content;
-  height: 100%;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
