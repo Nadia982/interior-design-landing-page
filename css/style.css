@@ -163,11 +163,6 @@ nav a:hover svg {
   /* background-size: 1160px; */
 }
 
-/* 
-.hero-container {
-
-} */
-
 .hero .container {
   height: clamp(30vh, 50vh, 80vh);
   align-items: center;
@@ -184,7 +179,7 @@ nav a:hover svg {
   padding: 0 5%;
   outline: 1px solid white;
   align-content: center;
-  clip-path: polygon(-1% 0, 70% 0%, 50% 101%, 0% 101%);
+  clip-path: polygon(-1% -1%, 70% -1%, 50% 101%, -1% 101%);
   max-width: 100%;
 }
 
@@ -192,7 +187,6 @@ nav a:hover svg {
   font-size: clamp(2rem, 7.5vw, 3rem);
   font-weight: 700;
   color: var(--cl--2--);
-  /* background-color: red; */
 }
 
 .hero-heading,
@@ -274,7 +268,7 @@ nav a:hover svg {
 /* Cards */
 
 .card-container {
-  max-width: clamp(1160px, 90%, 1160px);
+  /* max-width: clamp(1160px, 90%, 1160px); */
   margin: 0 auto;
   display: grid;
   grid-auto-rows: 1fr;
@@ -448,18 +442,34 @@ h2 {
     -ms-transform: scale(1);
     -o-transform: scale(1);
   }
+
+  .hero-heading {
+    line-height: 100%;
+  }
+
+  #hero-cta{
+    margin-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    min-height: 70vh;
+    clip-path: polygon(-1% -1%, 80% -1%, 60% 101%, -1% 101%);
+  }
   .hero-heading {
-    line-height: 100%;
-    font-size: 1.5rem;
+        line-height: 100%;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
   }
   #hero-cta {
     max-width: 40%;
-    font-size: 0.8rem;
-    padding: 0.5rem;
-    margin-top: 1rem;
+    font-size: 0.7rem;
+    padding: .6rem 0.3rem;
+    
   }
 
   .card-container {
