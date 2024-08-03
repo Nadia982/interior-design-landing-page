@@ -9,7 +9,7 @@ function toggleMenu() {
 // End navigation
 
 // Swiper
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".testimonial-slider", {
       slidesPerView: 1,
       spaceBetween: 20,
     //   autoplay: {
