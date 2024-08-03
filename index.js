@@ -12,6 +12,10 @@ function toggleMenu() {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: true,
+    //   },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
