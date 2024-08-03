@@ -16,6 +16,7 @@ body {
   --cl--1--: #ffffff;
   --cl--2--: #292f36;
   --cl--3--: #4d5053;
+  /* The row below is rgb R:227, G:218, B:209  */
   --cl--4--: #e3dad1;
   --cl--5--: #cda274;
   --gap--: clamp(1rem, 4vw, 4rem);
