@@ -21,6 +21,8 @@ body {
   --cl--5--: #cda274;
   --gap--: clamp(1rem, 4vw, 4rem);
   font-size: 1.25rem;
+  line-height: 125%;
+  font-family: "Lato", sans-serif;
 }
 
 img {
