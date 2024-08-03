@@ -12,10 +12,10 @@ function toggleMenu() {
     const swiper = new Swiper(".testimonial-slider", {
       slidesPerView: 1,
       spaceBetween: 20,
-    //   autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: true,
-    //   },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -25,7 +25,7 @@ function toggleMenu() {
           slidesPerView: 2,
           spaceBetween: 40,
         },
-        1200: {
+        1000: {
           slidesPerView: 3,
           spaceBetween: 50,
         },
