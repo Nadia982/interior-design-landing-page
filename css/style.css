@@ -287,7 +287,7 @@ nav a:hover svg {
   text-align: center;
   border: 1px solid var(--cl--4--);
   line-height: 125%;
-  border-radius: 25px;  
+  border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
@@ -318,7 +318,8 @@ h4 {
   gap: 3rem;
 }
 
-.contact-content, .testimonial-slider {
+.contact-content,
+.testimonial-slider, .heading p {
   margin-top: 1.5rem;
 }
 
@@ -378,26 +379,26 @@ h2 {
 /* Testimonials */
 .testimonial {
   background: var(--cl--4--);
-    padding: 2rem;
+  padding: 2rem;
   border-radius: 25px;
-    -webkit-border-radius: 25px;
+  -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
 
 .testimonial h2 {
-margin: 0 auto;
-font-size: 2rem;
-text-align: center;
-font-weight: 600;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .testimonial h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
-text-align: center;  
+  text-align: center;
 }
 
 .swiper-wrapper {
@@ -408,7 +409,7 @@ text-align: center;
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;
   gap: 1rem;
   background: var(--cl--1--);
   padding: 2rem;
@@ -420,27 +421,25 @@ text-align: center;
 }
 
 .profile {
-text-align: center;
-gap: 1rem;
+  text-align: center;
+  gap: 1rem;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: relative;
   margin-top: 2rem;
-
 }
 
 .swiper-pagination-bullet {
   opacity: 1;
   width: 20px;
   height: 20px;
-background: var(--cl--5--);
+  background: var(--cl--5--);
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: var(--cl--3--);
 }
-
 
 /* End testimonials */
 
@@ -451,7 +450,7 @@ background: var(--cl--5--);
   margin: 0 auto 1.5rem auto;
 }
 
-.project h2{
+.project h2 {
   margin-top: 3rem;
 }
 
@@ -467,25 +466,46 @@ background: var(--cl--5--);
 }
 
 .project-cards img {
-margin-top: 1rem;
+  margin-top: 1rem;
   max-height: 300px;
   /* max-width: 400px; */
   object-fit: cover;
-border-radius: 25px;
--webkit-border-radius: 25px;
--moz-border-radius: 25px;
--ms-border-radius: 25px;
--o-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .p-card-content {
-  padding-left: .3rem;
+  padding-left: 0.3rem;
 }
 
 /* End projects */
 
 /* Numbers */
+.numbers {
+  background: var(--cl--4--);
+  padding: 4rem 0;
+  margin-top: 3rem;
+}
 
+.numbers .container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.numbers div{
+  text-align: center;
+}
+
+.number {
+  font-weight: 700;
+  font-size: clamp(2rem, 7.5vw, 4rem);
+  color: var(--cl--5--);
+  margin-bottom: 2rem;
+}
 
 /* End numbers */
 
@@ -560,20 +580,20 @@ border-radius: 25px;
     line-height: 100%;
   }
 
-  #hero-cta{
+  #hero-cta {
     margin-top: 1rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero-content {
     min-height: 70vh;
-      clip-path: polygon(-1% -1%, 80% -1%, 60% 101%, -1% 101%);
+    clip-path: polygon(-1% -1%, 80% -1%, 60% 101%, -1% 101%);
   }
   .hero-heading {
-        line-height: 100%;
+    line-height: 100%;
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
@@ -581,8 +601,7 @@ border-radius: 25px;
   #hero-cta {
     max-width: 40%;
     font-size: 0.7rem;
-    padding: .6rem 0.3rem;
-    
+    padding: 0.6rem 0.3rem;
   }
 
   .card-container {
