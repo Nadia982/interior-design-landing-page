@@ -421,7 +421,6 @@ text-align: center;
 
 .profile {
 text-align: center;
-  /* justify-content: center; */
 gap: 1rem;
 }
 
@@ -459,19 +458,28 @@ background: var(--cl--5--);
 .project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-row-gap: var(--gap--);
-  grid-column-gap: var(--gap--); */
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
 }
 .project-cards a {
   max-width: 350px;
+  margin: 0 auto;
 }
 
 .project-cards img {
-
 margin-top: 1rem;
   max-height: 300px;
   /* max-width: 400px; */
   object-fit: cover;
+border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+-ms-border-radius: 25px;
+-o-border-radius: 25px;
+}
+
+.p-card-content {
+  padding-left: .3rem;
 }
 
 /* End projects */
