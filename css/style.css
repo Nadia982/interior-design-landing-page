@@ -204,10 +204,9 @@ nav a:hover svg {
   font-size: 1.5rem;
   opacity: 1;
 }
-.cards {
+/* .cards {
   width: 100%;
-
-}
+} */
 
 .hero-content p,
 .cards div p,
@@ -442,6 +441,37 @@ background: var(--cl--5--);
 
 
 /* End testimonials */
+
+/* Projects */
+.heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.project h2{
+  margin-top: 3rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-row-gap: var(--gap--);
+  grid-column-gap: var(--gap--); */
+}
+.project-cards a {
+  max-width: 350px;
+}
+
+.project-cards img {
+
+margin-top: 1rem;
+  max-height: 300px;
+  /* max-width: 400px; */
+  object-fit: cover;
+}
+
+/* End projects */
 
 /* Media */
 @media (min-width: 1220px) {
