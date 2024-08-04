@@ -378,8 +378,7 @@ h2 {
 /* Testimonials */
 .testimonial {
   background: var(--cl--4--);
-  
-  padding: 2rem;
+    padding: 2rem;
   border-radius: 25px;
     -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -401,8 +400,12 @@ font-weight: 600;
 text-align: center;  
 }
 
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .swiper-slide {
-  
   display: flex;
   flex-direction: column;
   text-align: center; 
