@@ -477,6 +477,21 @@ h2 {
   -o-border-radius: 25px;
 }
 
+.p-card {
+  border: 1px solid var(--cl--4--);
+  background: var(--cl--1--);
+  padding: 1rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.p-card:hover {
+  background: var(--cl--4--);
+}
+
 .p-card-content {
   padding-left: 0.3rem;
 }
