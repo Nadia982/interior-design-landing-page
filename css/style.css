@@ -5,7 +5,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   color: var(--cl--2--);
   margin: 0;
@@ -17,7 +17,8 @@ body {
   --cl--2--: #292f36;
   --cl--3--: #4d5053;
   /* The row below is rgb R:227, G:218, B:209  */
-  --cl--4--: #e3dad1;
+  /* --cl--4--: #e3dad1; */
+  --cl--4--: #f4f0ec;
   --cl--5--: #cda274;
   --gap--: clamp(1rem, 4vw, 4rem);
   font-size: 1.25rem;
@@ -46,6 +47,7 @@ a {
 ul {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -74,10 +76,10 @@ h6 {
   flex: 1 1 30rem;
 }
 
-/* .column {
+.column {
   justify-content: space-between;
   display: grid;
-} */
+}
 
 .grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -310,7 +312,7 @@ h4 {
 
 /* End cards */
 
-/* Contact */
+/* About */
 
 .contact {
   flex-wrap: wrap-reverse;
@@ -319,7 +321,8 @@ h4 {
 }
 
 .contact-content,
-.testimonial-slider, .heading p {
+.testimonial-slider,
+.heading p {
   margin-top: 1.5rem;
 }
 
@@ -374,7 +377,7 @@ h2 {
   object-fit: cover;
 }
 
-/* End contact */
+/* End about */
 
 /* Testimonials */
 .testimonial {
@@ -511,7 +514,7 @@ h2 {
   gap: 1rem;
 }
 
-.numbers div{
+.numbers div {
   text-align: center;
 }
 
@@ -523,6 +526,40 @@ h2 {
 }
 
 /* End numbers */
+
+/* Contact */
+.contact-box {
+  display: flex;
+  background: var(--cl--5--);
+   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-left h3, .contact-right h3{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.contact-left {
+  padding: 2rem;
+  flex-basis: 60%;
+background: var(--cl--4--);
+border-radius: 25px 0 0 25px;
+-webkit-border-radius: 25px 0 0 25px;
+-moz-border-radius: 25px 0 0 25px;
+-ms-border-radius: 25px 0 0 25px;
+-o-border-radius: 25px 0 0 25px;
+}
+
+.contact-right{
+  padding: 2rem;
+
+}
+/* End contact */
 
 /* Media */
 @media (min-width: 1220px) {
