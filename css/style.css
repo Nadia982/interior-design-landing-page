@@ -111,7 +111,7 @@ header {
 
 .logo img {
   object-fit: contain;
-  max-height: 100px;
+    max-height: 100px;
 }
 
 .toggleMenu {
@@ -120,7 +120,6 @@ header {
 
 nav {
   align-items: center;
-  /* gap: var(--gap--); */
 }
 
 nav a {
@@ -212,7 +211,7 @@ nav a:hover svg {
 
 .hero-content p,
 .cards div p,
-.contact-content h2 + p {
+.about-content h2 + p {
   margin: 1.5rem auto;
 }
 
@@ -314,13 +313,13 @@ h4 {
 
 /* About */
 
-.contact {
+.about {
   flex-wrap: wrap-reverse;
   padding: 4rem 0;
   gap: 3rem;
 }
 
-.contact-content,
+.about-content,
 .testimonial-slider,
 .heading p {
   margin-top: 1.5rem;
@@ -330,49 +329,16 @@ h2 {
   font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
-.details {
-  max-width: max-content;
-  text-align: center;
-  align-items: center;
-  gap: 3rem;
-}
-
-.details .row {
-  margin-top: 1.5rem;
-  fill: transparent;
-  stroke: var(--cl--5--);
-  background: var(--cl--4--);
-  width: 90px;
-  height: 90px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: background-size 0.5s ease-in-out;
-  -webkit-transition: background-size 0.5s ease-in-out;
-  -moz-transition: background-size 0.5s ease-in-out;
-  -ms-transition: background-size 0.5s ease-in-out;
-  -o-transition: background-size 0.5s ease-in-out;
-}
-
-.contact-svg:hover {
-  background: var(--cl--5--);
-  stroke: var(--cl--4--);
-}
-
 .details p {
   text-transform: capitalize;
   margin-top: 0.25rem;
 }
 
-.contact-content .page-btn {
+.about-content .page-btn {
   margin-top: 1.5rem;
 }
 
-.contact-img img {
+.about-img img {
   width: 100%;
   object-fit: cover;
 }
@@ -528,6 +494,10 @@ h2 {
 /* End numbers */
 
 /* Contact */
+
+.contact h2{
+  margin-top: 2rem;
+}
 .contact-box {
   display: flex;
   background: var(--cl--4--);
@@ -542,6 +512,7 @@ h2 {
 .contact-left h3, .contact-right h3{
   font-family: "Lato", sans-serif;
   font-weight: 600;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -622,7 +593,51 @@ cursor: pointer;
   filter: brightness(130%)
 }
 
+.contact-svg svg{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10%;
+  background: var(--cl--5--);
+  stroke: var(--cl--4--);
+  margin-right: 1rem;
+}
 
+.details {
+  max-width: max-content;
+  text-align: center;
+  align-items: center;
+  gap: 0;
+  
+}
+
+.estimate {
+  /* max-width: max-content; */
+  max-width: 200px;
+  margin: 2rem auto 0
+}
+
+.contact-details .row {
+  margin-top: 1rem;
+  fill: transparent;
+  stroke: var(--cl--5--);
+  background: var(--cl--4--);
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+
+  transition: background-size 0.5s ease-in-out;
+  -webkit-transition: background-size 0.5s ease-in-out;
+  -moz-transition: background-size 0.5s ease-in-out;
+  -ms-transition: background-size 0.5s ease-in-out;
+  -o-transition: background-size 0.5s ease-in-out;
+}
 
 /* End contact */
 
