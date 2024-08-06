@@ -530,7 +530,7 @@ h2 {
 /* Contact */
 .contact-box {
   display: flex;
-  background: var(--cl--5--);
+  background: var(--cl--4--);
    border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -542,12 +542,13 @@ h2 {
 .contact-left h3, .contact-right h3{
   font-family: "Lato", sans-serif;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .contact-left {
   padding: 2rem;
   flex-basis: 60%;
-background: var(--cl--4--);
+background: var(--cl--5--);
 border-radius: 25px 0 0 25px;
 -webkit-border-radius: 25px 0 0 25px;
 -moz-border-radius: 25px 0 0 25px;
@@ -559,6 +560,70 @@ border-radius: 25px 0 0 25px;
   padding: 2rem;
 
 }
+
+.input-group{
+  flex-basis: 45%;
+}
+
+input{
+  min-height: 2rem;
+}
+input, textarea {
+  width: 100%;
+  border: 2px solid transparent;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+font-size: 1.1rem;
+}
+
+textarea{
+  resize: none;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+::placeholder{
+  font-family: "Lato", sans-serif;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid var(--cl--5--);
+outline: 3px solid white;
+ 
+}
+.form-submit-btn:focus {
+  border: 2px solid var(--cl--5--);
+  outline: 3px solid var(--cl--2--); 
+}
+
+.form-submit-btn{
+ background: var(--cl--2--); 
+ color: var(--cl--1--);
+ border: 2px solid transparent;
+width: 100px;
+padding: 1rem 0;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+font-size: 1.1rem;
+letter-spacing: 1px;
+cursor: pointer;
+}
+
+.form-submit-btn:hover{
+  filter: brightness(130%)
+}
+
+
+
 /* End contact */
 
 /* Media */
