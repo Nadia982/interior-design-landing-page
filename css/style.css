@@ -733,6 +733,14 @@ cursor: pointer;
 .contact-svg{
   flex-basis: 20%;
 }
+.contact-left {
+  border-radius: 25px 25px 0 0;
+  -webkit-border-radius: 25px 25px 0 0;
+  -moz-border-radius: 25px 25px 0 0;
+  -ms-border-radius: 25px 25px 0 0;
+  -o-border-radius: 25px 25px 0 0;
+}
+
 }
 @media (max-width: 480px) {
   .hero-content {
