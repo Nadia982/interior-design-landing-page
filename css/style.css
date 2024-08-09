@@ -314,9 +314,13 @@ h4 {
 /* About */
 
 .about {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   padding: 4rem 0;
   gap: 3rem;
+}
+
+.about h2 {
+  text-align: center;
 }
 
 .about-content,
