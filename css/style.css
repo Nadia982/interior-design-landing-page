@@ -520,9 +520,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.address{
+  margin-top: 3rem;
+}
+
 .contact-left {
   padding: 2rem;
-  flex-basis: 60%;
+  flex-basis: 50%;
 background: var(--cl--5--);
 border-radius: 25px 0 0 25px;
 -webkit-border-radius: 25px 0 0 25px;
@@ -578,11 +582,15 @@ outline: 3px solid white;
 }
 
 .form-submit-btn{
+  margin-top: 1rem;
+  /* position: relative; */
+  display: block;
  background: var(--cl--2--); 
  color: var(--cl--1--);
  border: 2px solid transparent;
-width: 100px;
-padding: 1rem 0;
+min-width: 100px;
+height: max-content;
+padding: 1rem .5rem;
 border-radius: 10px;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
