@@ -5,7 +5,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   color: var(--cl--2--);
   margin: 0;
@@ -576,9 +575,13 @@ input:focus, textarea:focus {
 outline: 3px solid white;
  
 }
-.form-submit-btn:focus {
-  border: 2px solid var(--cl--5--);
-  outline: 3px solid var(--cl--2--); 
+
+.phone {
+  font-family: "Lato", sans-serif;
+}
+
+.contact-right .form-submit-btn {
+margin-top: 2rem; 
 }
 
 .form-submit-btn{
@@ -599,10 +602,20 @@ border-radius: 10px;
 font-size: 1.1rem;
 letter-spacing: 1px;
 cursor: pointer;
+transition: 0.1s ease-in-out;
+-webkit-transition: 0.1s ease-in-out;
+-moz-transition: 0.1s ease-in-out;
+-ms-transition: 0.1s ease-in-out;
+-o-transition: 0.1s ease-in-out;
+}
+
+.form-submit-btn:focus {
+  border: 2px solid var(--cl--5--);
+  outline: 3px solid var(--cl--2--); 
 }
 
 .form-submit-btn:hover{
-  filter: brightness(130%)
+  filter: brightness(150%);
 }
 
 .contact-svg svg{
