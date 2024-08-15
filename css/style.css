@@ -658,6 +658,8 @@ transition: 0.1s ease-in-out;
   -o-transition: background-size 0.5s ease-in-out;
 }
 
+
+
 /* End contact */
 
 /* Media */
@@ -760,6 +762,10 @@ transition: 0.1s ease-in-out;
   -moz-border-radius: 25px 25px 0 0;
   -ms-border-radius: 25px 25px 0 0;
   -o-border-radius: 25px 25px 0 0;
+}
+
+.contact-details-img{
+  padding-left: 1.5rem;
 }
 
 }
