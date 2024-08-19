@@ -497,6 +497,9 @@ h2 {
 /* End numbers */
 
 /* Contact */
+section.contact{
+  margin-bottom: 5rem;
+}
 
 .contact h2{
   margin-top: 2rem;
@@ -586,7 +589,6 @@ margin-top: 2rem;
 
 .form-submit-btn{
   margin-top: 1rem;
-  /* position: relative; */
   display: block;
  background: var(--cl--2--); 
  color: var(--cl--1--);
@@ -664,6 +666,7 @@ transition: 0.1s ease-in-out;
 
 /* footer */
 footer {
+  margin-top: 20rem;
   background-color: var(--cl--2--);
   height: 20rem;
 }
@@ -743,6 +746,7 @@ footer {
     margin-top: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    
   }
 }
 
