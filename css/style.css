@@ -662,6 +662,12 @@ transition: 0.1s ease-in-out;
 
 /* End contact */
 
+/* footer */
+footer {
+  background-color: var(--cl--2--);
+  height: 20rem;
+}
+
 /* Media */
 @media (min-width: 1220px) {
   .container {
