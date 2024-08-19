@@ -153,14 +153,10 @@ nav a:hover svg {
 
 /* Hero */
 .hero {
-  /* background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886877.jpg); */
   background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886880-sitting-room.jpg);
-  /* background-image: url(../img/pexels-rana-matloob-hussain-733235258-26886913.jpg); */
-  /* Photo by Rana Matloob Hussain https://www.pexels.com/@rana-matloob-hussain-733235258/*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-size: 1160px; */
 }
 
 .hero .container {
@@ -192,6 +188,10 @@ nav a:hover svg {
 .hero-heading,
 .hero-text {
   width: 60%;
+}
+
+#hero-cta {
+  padding: 1rem;
 }
 
 .hero-content img {
@@ -746,7 +746,6 @@ footer {
     margin-top: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    
   }
 }
 
