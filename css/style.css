@@ -66,7 +66,6 @@ h6 {
 
 .flex {
   flex-wrap: wrap;
-  /* gap: var(--gap--); */
   align-items: center;
   justify-content: space-between;
 }
@@ -264,7 +263,12 @@ nav a:hover svg {
 
 /* End hero */
 
-/* Cards */
+/* Services */
+#services h2 {
+  text-align: center;
+  margin-top: 3rem;
+  
+}
 
 .card-container {
   /* max-width: clamp(1160px, 90%, 1160px); */
@@ -276,7 +280,7 @@ nav a:hover svg {
   grid-row-gap: var(--gap--);
   grid-column-gap: var(--gap--);
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 1rem;
   justify-items: start;
   align-items: stretch;
   grid-auto-rows: 1fr;

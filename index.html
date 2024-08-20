@@ -33,11 +33,11 @@
       <button class="toggleMenu" onclick="toggleMenu()"></button>
       <nav class="navigation row">
         <a href="#">Home</a>
-        <a href="#">Pages</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#our-work">Our Work</a>
+        <a href="#contact">Contact</a>
         <!-- <a href="#" class="logo"
           ><img src="./img/arrow-black.svg" alt="arrow"
         /></a> -->
@@ -63,7 +63,10 @@
     <!--End hero -->
 
     <!-- Cards -->
-    <div class="card-container container">
+    
+    <div id="services" class="container">
+      <h2>Services</h2>
+      <div class="card-container">
       <section class="cards column container">
         <div>
           <h4>Project plan</h4>
@@ -113,9 +116,10 @@
         </div>
       </section>
     </div>
+  </div>  
     <!-- End cards -->
     <!-- About -->
-    <section class="about row flex container">
+    <section id="about" class="about row flex container">
       <div class="about-content">
         <h2>About</h2>
         <p>
@@ -138,7 +142,7 @@
     </section>
     <!-- End contact -->
     <!-- Testimonials -->
-    <section class="testimonial container">
+    <section id="testimonials" class="testimonial container">
       <h2>Testimonials</h2>
       <div class="swiper mySwiper testimonial-slider">
         <div class="swiper-wrapper">
@@ -184,7 +188,7 @@
     </section>
     <!-- End testimonials -->
     <!-- Project -->
-    <section class="project container">
+    <section id="our-work" class="project container">
       <div class="heading">
         <h2>Our work</h2>
         <p>See some of our recently completed projects</p>
@@ -258,7 +262,7 @@
       </div>
     </section>
 
-    <section class="contact container">
+    <section id="contact" class="contact container">
       <div class="heading">
         <h2>Contact</h2>
         <p>
@@ -281,7 +285,7 @@
               </div>
               <div class="input-group">
                 <label for="message">Message</label>
-                <textarea rows="5" name="message" id="message" placeholder="Message">
+                <textarea rows="3" name="message" id="message" placeholder="Message">
 
                 </textarea>
               </div>
@@ -333,7 +337,11 @@
     </section>
     <!-- End Contact form -->
      <footer class="container">
-      
+      <div class="footer row"></div>
+      <h3>
+        Pages
+      </h3>
+
      </footer>
 
     <script src="index.js"></script>
